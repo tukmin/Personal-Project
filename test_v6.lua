@@ -12,30 +12,7 @@ local Lighting = game:GetService("Lighting")
 local HttpService = game:GetService("HttpService")
 local TeleportService = game:GetService("TeleportService")
 
--- Create Key Verification Window
-local KeyWindow = Fluent:CreateWindow({
-    Title = "ECSTACY V2 - KEY VERIFICATION",
-    SubTitle = "Script Access System",
-    TabWidth = 160,
-    Size = UDim2.fromOffset(450, 200),
-    Acrylic = true,
-    Theme = "Dark",
-    MinimizeKey = Enum.KeyCode.RightControl
-})
-
-Fluent:SetTheme({
-    Background = Color3.fromRGB(15, 15, 20),
-    Text = Color3.fromRGB(240, 240, 240),
-    Accent = Color3.fromRGB(180, 40, 180)
-})
-
-KeyWindow:Destroy()
 loadMainScript()
-
-task.spawn(function()
-    task.wait(1)
-    KeyInput:CaptureFocus()
-end)
 
 -- ✅ MAIN HUB SCRIPT START
 function loadMainScript()
