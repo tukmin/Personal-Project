@@ -48,22 +48,8 @@ KeyTab:AddButton({
     Title = "VERIFY KEY",
     Description = "Check key validity",
     Callback = function()
-        local key = string.lower(KeyInput.Value:gsub("%s+", ""))
-        if key == "shakshokasotuff45" then
-            Fluent:Notify({
-                Title = "Access Granted",
-                Content = "Loading EcstacyV2...",
-                Duration = 2
-            })
             KeyWindow:Destroy()
-            loadMainScript()
-        else
-            Fluent:Notify({
-                Title = "Invalid Key",
-                Content = "Incorrect key entered",
-                Duration = 3
-            })
-        end
+            loadMainScript()	
     end
 })
 
