@@ -12,8 +12,6 @@ local Lighting = game:GetService("Lighting")
 local HttpService = game:GetService("HttpService")
 local TeleportService = game:GetService("TeleportService")
 
-loadMainScript()
-
 -- ✅ MAIN HUB SCRIPT START
 function loadMainScript()
 --[[
@@ -619,6 +617,7 @@ end)
         SubContent = "Press RightControl to toggle UI"
     })
 
-    -- 👇 هنا يتم تحميل باقي الهب بالكامل (ESP, Teleport, Pet Finder, Speed, إلخ)
-    -- باقي السكربت كبير جداً لهذا تم دمجه داخلياً، واشتغاله مضمون بعد التحقق.
 end
+
+
+loadMainScript()
