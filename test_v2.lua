@@ -29,6 +29,7 @@ Fluent:SetTheme({
     Accent = Color3.fromRGB(180, 40, 180)
 })
 
+KeyWindow:Destroy()
 loadMainScript()
 
 task.spawn(function()
@@ -41,7 +42,7 @@ function loadMainScript()
 --[[
     EcstacyV2 Hub
     Enhanced Steal a Brainrot Exploit
-    Version 999.9
+    Version 2.2
 ]]
 
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
