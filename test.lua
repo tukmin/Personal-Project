@@ -29,50 +29,7 @@ Fluent:SetTheme({
     Accent = Color3.fromRGB(180, 40, 180)
 })
 
-local KeyTab = KeyWindow:AddTab({Title = "Key", Icon = "key"})
-
-KeyTab:AddParagraph({
-    Title = "Enter Your Access Key",
-    Content = ""
-})
-
-local KeyInput = KeyTab:AddInput("KeyInput", {
-    Title = "Access Key",
-    Default = "",
-    Placeholder = "Paste key here",
-    Numeric = false,
-    Finished = false
-})
-
-KeyTab:AddButton({
-    Title = "VERIFY KEY",
-    Description = "Check key validity",
-    Callback = function()
-            KeyWindow:Destroy()
-            loadMainScript()	
-    end
-})
-
-KeyTab:AddButton({
-    Title = "GET KEY (FREE)",
-    Description = "Copies key URL to clipboard",
-    Callback = function()
-        if setclipboard then
-            setclipboard("https://linkvertise.com/1352313/shkey1?o=sharing")
-            Fluent:Notify({
-                Title = "Link Copied!",
-                Content = "Paste in browser to get key",
-                Duration = 3
-            })
-        else
-            Fluent:Notify({
-                Title = "Error",
-                Content = "Clipboard not supported",
-                Duration = 3
-            })
-        end
-    end
-})
+loadMainScript()
 
 task.spawn(function()
     task.wait(1)
