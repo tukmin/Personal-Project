@@ -41,7 +41,7 @@ function loadMainScript()
 --[[
     EcstacyV2 Hub
     Enhanced Steal a Brainrot Exploit
-    Version 2.2
+    Version 999.9
 ]]
 
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
